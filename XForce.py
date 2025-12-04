@@ -477,9 +477,8 @@ class XForce:
         log.info(f"Results: {len(self.found)} hits saved")
 
 
-# =============================================================================
-# UTILS
-# =============================================================================
+
+
 def load_list(file: str) -> List[str]:
     if not file:
         return []
@@ -490,9 +489,10 @@ def load_list(file: str) -> List[str]:
     return [l.strip() for l in p.read_text(encoding='utf-8', errors='ignore').splitlines() if l.strip()]
 
 
-# =============================================================================
-# MAIN
-# =============================================================================
+
+
+
+
 async def main():
     parser = argparse.ArgumentParser(
         description="XForce - Final Linux SSH Bruteforce",
